@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!--HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand">Cesar Augusto Costa - Desenvolvedor</a>
+            </div>
+        </nav>
+    </header>
+    <!--FIM HEADER -->
+
+    <!--PRINCIPAL -->
+    <section align="center" ng-controller="contadorCtrl">
+      <h3 class="brand"><small>Contador</small></h3>
+      <hr>
+      <div class="btn-group btn-group-lg" role="group" ng-model="contador">
+        <button type="button" class="btn btn-default btn-lg" ng-click="contar()" placeholder="Contar">
+          <strong>+1</strong>
+        </button>
+        <button type="button" class="btn btn-default btn-lg" ng-click="zerar()" placeholder="Zerar">
+          <strong>0</strong>
+        </button>
+        <button type="button" class="btn btn-default btn-lg" ng-click="descontar()" placeholder="Descontar">
+          <strong>-1</strong>
+        </button>
+      </div>
+      <h1 class="text"><span class="label label-default label-lg">{{ contador }}</span></h1>
+    </section>
+    <!-- FIM PRINCIPAL -->
+
+    <!--FOOTER -->
+    <footer class="footer">
+        <hr>
+            <p class="text-center">
+                <small>Cesar Augusto Costa - 2016</small>
+            </p>
+    </footer>
+    <!--FIM FOOTER -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
